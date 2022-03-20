@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/Hello.cpp
+llvm/Pass.h
+/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/llvm/Pass.h
+llvm/IR/Function.h
+/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/llvm/IR/Function.h
+llvm/Support/raw_ostream.h
+/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/llvm/Support/raw_ostream.h
+

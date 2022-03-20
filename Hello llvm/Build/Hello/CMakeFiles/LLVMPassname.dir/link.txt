@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -Wl,-rpath-link,  -Wl,--gc-sections -shared  -o LLVMPassname.so CMakeFiles/LLVMPassname.dir/Hello.o  -Wl,-rpath,"\$ORIGIN/../lib" 
