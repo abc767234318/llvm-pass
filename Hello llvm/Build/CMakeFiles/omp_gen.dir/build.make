@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/ubuntu/llvm-obfuscate/Hello llvm"
+CMAKE_SOURCE_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/ubuntu/llvm-obfuscate/Hello llvm/Build"
+CMAKE_BINARY_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build"
 
 # Utility rule file for omp_gen.
 
@@ -67,6 +67,6 @@ CMakeFiles/omp_gen.dir/clean:
 .PHONY : CMakeFiles/omp_gen.dir/clean
 
 CMakeFiles/omp_gen.dir/depend:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ubuntu/llvm-obfuscate/Hello llvm" "/home/ubuntu/llvm-obfuscate/Hello llvm" "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" "/home/ubuntu/llvm-obfuscate/Hello llvm/Build/CMakeFiles/omp_gen.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ubuntu/github-project/llvm-pass/Hello llvm" "/home/ubuntu/github-project/llvm-pass/Hello llvm" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/CMakeFiles/omp_gen.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/omp_gen.dir/depend
 

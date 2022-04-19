@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/llvm-obfuscate/Hello llvm
+# Install script for directory: /home/ubuntu/github-project/llvm-pass/Hello llvm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,9 +38,8 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/ubuntu/llvm-obfuscate/Hello llvm/Build/Hello/cmake_install.cmake")
-
+  # Include the install script for the subdirectory.
+  include("/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/Hello/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -51,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/llvm-obfuscate/Hello llvm/Build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,4 @@
-#include "../include/SplitBasicBlock.h"
+#include "include/SplitBasicBlock.h"
 
 namespace
 {

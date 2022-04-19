@@ -6,11 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/Hello.cpp
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/Hello.cpp
 llvm/Pass.h
-/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/llvm/Pass.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/Pass.h
 llvm/IR/Function.h
-/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/llvm/IR/Function.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/IR/Function.h
+llvm/IR/Type.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/IR/Type.h
+llvm/IR/Value.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/IR/Value.h
 llvm/Support/raw_ostream.h
-/home/ubuntu/llvm-obfuscate/Hello llvm/Hello/llvm/Support/raw_ostream.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/Support/raw_ostream.h
+llvm/IR/Instructions.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/IR/Instructions.h
+llvm/IR/Function.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/IR/Function.h
+llvm/Support/CommandLine.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/Support/CommandLine.h
+llvm/Transforms/Utils/ValueMapper.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/Transforms/Utils/ValueMapper.h
+llvm/Transforms/Utils/Cloning.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/Transforms/Utils/Cloning.h
+llvm/IR/Module.h
+/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello/llvm/IR/Module.h
 

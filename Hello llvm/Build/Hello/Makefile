@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/ubuntu/llvm-obfuscate/Hello llvm"
+CMAKE_SOURCE_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/ubuntu/llvm-obfuscate/Hello llvm/Build"
+CMAKE_BINARY_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/ubuntu/llvm-obfuscate/Hello llvm/Build/CMakeFiles" "/home/ubuntu/llvm-obfuscate/Hello llvm/Build/Hello/CMakeFiles/progress.marks"
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ubuntu/llvm-obfuscate/Hello llvm/Build/CMakeFiles" 0
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/CMakeFiles" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/Hello/CMakeFiles/progress.marks"
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/clean
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/preinstall
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/preinstall
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Hello/CMakeFiles/install-LLVMPassname-stripped.dir/rule:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/CMakeFiles/install-LLVMPassname-stripped.dir/rule
 .PHONY : Hello/CMakeFiles/install-LLVMPassname-stripped.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ install-LLVMPassname-stripped: Hello/CMakeFiles/install-LLVMPassname-stripped.di
 
 # fast build rule for target.
 install-LLVMPassname-stripped/fast:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/install-LLVMPassname-stripped.dir/build.make Hello/CMakeFiles/install-LLVMPassname-stripped.dir/build
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/install-LLVMPassname-stripped.dir/build.make Hello/CMakeFiles/install-LLVMPassname-stripped.dir/build
 .PHONY : install-LLVMPassname-stripped/fast
 
 # Convenience name for target.
 Hello/CMakeFiles/install-LLVMPassname.dir/rule:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/CMakeFiles/install-LLVMPassname.dir/rule
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/CMakeFiles/install-LLVMPassname.dir/rule
 .PHONY : Hello/CMakeFiles/install-LLVMPassname.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ install-LLVMPassname: Hello/CMakeFiles/install-LLVMPassname.dir/rule
 
 # fast build rule for target.
 install-LLVMPassname/fast:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/install-LLVMPassname.dir/build.make Hello/CMakeFiles/install-LLVMPassname.dir/build
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/install-LLVMPassname.dir/build.make Hello/CMakeFiles/install-LLVMPassname.dir/build
 .PHONY : install-LLVMPassname/fast
 
 # Convenience name for target.
 Hello/CMakeFiles/LLVMPassname.dir/rule:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/CMakeFiles/LLVMPassname.dir/rule
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f CMakeFiles/Makefile2 Hello/CMakeFiles/LLVMPassname.dir/rule
 .PHONY : Hello/CMakeFiles/LLVMPassname.dir/rule
 
 # Convenience name for target.
@@ -198,23 +198,35 @@ LLVMPassname: Hello/CMakeFiles/LLVMPassname.dir/rule
 
 # fast build rule for target.
 LLVMPassname/fast:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/build
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/build
 .PHONY : LLVMPassname/fast
 
-# target to build an object file
-Hello.o:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/Hello.o
+Hello.o: Hello.cpp.o
+
 .PHONY : Hello.o
 
-# target to preprocess a source file
-Hello.i:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/Hello.i
+# target to build an object file
+Hello.cpp.o:
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/Hello.cpp.o
+.PHONY : Hello.cpp.o
+
+Hello.i: Hello.cpp.i
+
 .PHONY : Hello.i
 
-# target to generate assembly for a file
-Hello.s:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/Hello.s
+# target to preprocess a source file
+Hello.cpp.i:
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/Hello.cpp.i
+.PHONY : Hello.cpp.i
+
+Hello.s: Hello.cpp.s
+
 .PHONY : Hello.s
+
+# target to generate assembly for a file
+Hello.cpp.s:
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(MAKE) -f Hello/CMakeFiles/LLVMPassname.dir/build.make Hello/CMakeFiles/LLVMPassname.dir/Hello.cpp.s
+.PHONY : Hello.cpp.s
 
 # Help Target
 help:
@@ -245,6 +257,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/ubuntu/llvm-obfuscate/Hello llvm/Build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

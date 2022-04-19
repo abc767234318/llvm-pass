@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LLVMPassname.dir/Hello.o"
-  "LLVMPassname.pdb"
-  "LLVMPassname.so"
+  "CMakeFiles/LLVMPassname.dir/Hello.cpp.o"
+  "libLLVMPassname.pdb"
+  "libLLVMPassname.so"
+  "libLLVMPassname.so.14git"
 )
 
 # Per-language clean rules from dependency scanning.
