@@ -1,3 +1,3 @@
-add_llvm_library(LLVMPassname SHARED 
+add_llvm_library(LLVMPassname MODULE 
   Hello.cpp
   )
