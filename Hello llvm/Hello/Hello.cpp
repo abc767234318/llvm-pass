@@ -10,13 +10,6 @@
 #include "llvm/Transforms/Utils/Cloning.h"
 #include "llvm/IR/Module.h"
 
-llvm::LLVMContext *CONTEXT;
-
-#define INIT_CONTEXT(F) CONTEXT = &F.getContext()
-#define TYPE_I32 Type::getInt32Ty(*CONTEXT)
-#define CONST_I32(V) ConstantInt::get(TYPE_I32, V, false)
-#define CONST(T, V) ConstantInt::get(T, V)
-
 using namespace llvm;
 
 namespace
@@ -33,22 +26,15 @@ namespace
 
 bool HelloWorld::runOnFunction(Function &F)
 {
-    // todo
-    INIT_CONTEXT(F);
 
     outs() << "Hello" << F.getName() << "\n";
-    Module *M = F.getEntryBlock().getModule();
-    GlobalVariable *xptr = new GlobalVariable(*M, TYPE_I32, false, GlobalValue::CommonLinkage, CONST_I32(0), "x");
-    dbgs() << F.getEntryBlock();
     for (Instruction &I : F.getEntryBlock())
     {
-        // do something with I
-        LoadInst *x = new LoadInst(TYPE_I32, xptr, "", &I);
-        break;
+
     }
     
 }
 
 char HelloWorld::ID = 0;
-// hlw ÊÇoptÊ¹ÓÃÊ±µÄ²ÎÊý
-static RegisterPass<HelloWorld> X("hlw", "PassÃèÊö£ºMy first line of llvm pass");
+// hlw ï¿½ï¿½optÊ¹ï¿½ï¿½Ê±ï¿½Ä²ï¿½ï¿½ï¿½
+static RegisterPass<HelloWorld> X("hlw", "Passï¿½ï¿½ï¿½ï¿½ï¿½ï¿½My first line of llvm pass");

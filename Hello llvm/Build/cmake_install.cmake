@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/github-project/llvm-pass/Hello llvm
+# Install script for directory: /home/ping/桌面/github-project/llvm-pass/Hello llvm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/Hello/cmake_install.cmake")
+  include("/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/Hello/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

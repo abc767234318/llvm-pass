@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC   -Wl,-rpath-link,  -Wl,--gc-sections -shared -Wl,-soname,libLLVMPassname.so.14git -o libLLVMPassname.so.14git CMakeFiles/LLVMPassname.dir/Hello.cpp.o  -Wl,-rpath,"\$ORIGIN/../lib" 
+/usr/bin/c++ -fPIC   -Wl,-rpath-link,  -Wl,--gc-sections -shared -Wl,-soname,libLLVMPassname.so.15git -o libLLVMPassname.so.15git CMakeFiles/LLVMPassname.dir/Hello.cpp.o  -Wl,-rpath,"\$ORIGIN/../lib:/home/ping/桌面/llvm-project/build/./lib" 

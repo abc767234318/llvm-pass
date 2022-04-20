@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm"
+CMAKE_SOURCE_DIR = "/home/ping/桌面/github-project/llvm-pass/Hello llvm"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build"
+CMAKE_BINARY_DIR = "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/CMakeFiles" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/CMakeFiles" "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

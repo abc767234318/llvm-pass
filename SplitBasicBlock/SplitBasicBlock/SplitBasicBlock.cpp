@@ -1,6 +1,9 @@
-#include "include/SplitBasicBlock.h"
+#include "llvm/IR/Function.h"
+#include "llvm/Pass.h"
 
-namespace
+using namespace llvm;
+
+namespace llvm
 {
     class SplitBasicBlock : public FunctionPass{
         public:
@@ -14,7 +17,7 @@ namespace
 
             //判断一个基本块中是否含有phi指令
             bool containsPHI(BasicBlock *BB);
-    }
+    };
 } // namespace
 
 bool SplitBasicBlock::runOnFunction(Function &F){
@@ -57,10 +60,6 @@ void SplitBasicBlock::split(BasicBlock *BB){
       }
     }
   }
-}
-
-FunctionPass* llvm::createSplitBasicBlockPass(){
-    return new SplitBasicBlock();
 }
 
 

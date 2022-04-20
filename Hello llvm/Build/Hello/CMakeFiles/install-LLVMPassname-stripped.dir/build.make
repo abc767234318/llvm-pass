@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm"
+CMAKE_SOURCE_DIR = "/home/ping/桌面/github-project/llvm-pass/Hello llvm"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build"
+CMAKE_BINARY_DIR = "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build"
 
 # Utility rule file for install-LLVMPassname-stripped.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build"
 include Hello/CMakeFiles/install-LLVMPassname-stripped.dir/progress.make
 
 Hello/CMakeFiles/install-LLVMPassname-stripped:
-	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/Hello" && /usr/bin/cmake -DCMAKE_INSTALL_COMPONENT="LLVMPassname" -DCMAKE_INSTALL_DO_STRIP=1 -P /home/ubuntu/github-project/llvm-pass/Hello\ llvm/Build/cmake_install.cmake
+	cd "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/Hello" && /usr/bin/cmake -DCMAKE_INSTALL_COMPONENT="LLVMPassname" -DCMAKE_INSTALL_DO_STRIP=1 -P /home/ping/桌面/github-project/llvm-pass/Hello\ llvm/Build/cmake_install.cmake
 
 install-LLVMPassname-stripped: Hello/CMakeFiles/install-LLVMPassname-stripped
 install-LLVMPassname-stripped: Hello/CMakeFiles/install-LLVMPassname-stripped.dir/build.make
@@ -67,10 +67,10 @@ Hello/CMakeFiles/install-LLVMPassname-stripped.dir/build: install-LLVMPassname-s
 .PHONY : Hello/CMakeFiles/install-LLVMPassname-stripped.dir/build
 
 Hello/CMakeFiles/install-LLVMPassname-stripped.dir/clean:
-	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/Hello" && $(CMAKE_COMMAND) -P CMakeFiles/install-LLVMPassname-stripped.dir/cmake_clean.cmake
+	cd "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/Hello" && $(CMAKE_COMMAND) -P CMakeFiles/install-LLVMPassname-stripped.dir/cmake_clean.cmake
 .PHONY : Hello/CMakeFiles/install-LLVMPassname-stripped.dir/clean
 
 Hello/CMakeFiles/install-LLVMPassname-stripped.dir/depend:
-	cd "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ubuntu/github-project/llvm-pass/Hello llvm" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Hello" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/Hello" "/home/ubuntu/github-project/llvm-pass/Hello llvm/Build/Hello/CMakeFiles/install-LLVMPassname-stripped.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ping/桌面/github-project/llvm-pass/Hello llvm" "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Hello" "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build" "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/Hello" "/home/ping/桌面/github-project/llvm-pass/Hello llvm/Build/Hello/CMakeFiles/install-LLVMPassname-stripped.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Hello/CMakeFiles/install-LLVMPassname-stripped.dir/depend
 
