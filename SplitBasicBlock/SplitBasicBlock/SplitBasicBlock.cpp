@@ -1,5 +1,6 @@
 #include "llvm/IR/Function.h"
 #include "llvm/Pass.h"
+#include "llvm/IR/Instructions.h"
 #include "llvm/Support/raw_ostream.h"
 #include "llvm/Support/CommandLine.h"
 #include<vector>
@@ -7,7 +8,7 @@
 using std::vector;
 using namespace llvm;
 
-namespace
+namespace llvm
 {
     class SplitBasicBlock : public FunctionPass{
         public:
@@ -26,7 +27,7 @@ namespace
 
 // 可选的参数，指定一个基本块会被分裂成几个基本块，默认值为 2
 //static cl::opt<int> SplitNum("split-num", cl::init(0), cl::desc("Split <split_num> time(s) each BB"));
-int SplitNum = 2;
+int SplitNum = 4;
 
 bool SplitBasicBlock::runOnFunction(Function &F){
     if(SplitNum > 0){
@@ -37,7 +38,9 @@ bool SplitBasicBlock::runOnFunction(Function &F){
         }
         // 第二步：对每个不包含 PHI 指令的基本块执行分裂操作
         for(BasicBlock *BB : origBB){
+            outs() << "111" << "\n";
             if(!containsPHI(BB)){
+
                 split(BB);
             }
         }
@@ -47,6 +50,7 @@ bool SplitBasicBlock::runOnFunction(Function &F){
 }
 
 void SplitBasicBlock::split(BasicBlock *BB){
+    
     // 计算分裂后每个基本块的大小
     // 原基本块的大小 / 分裂数目（向上取整）
     int splitSize = (BB->size() + SplitNum - 1) / SplitNum;
@@ -56,6 +60,7 @@ void SplitBasicBlock::split(BasicBlock *BB){
         for(Instruction &I : *curBB){
             if(cnt++ == splitSize){
                 // 在 I 指令处对基本块进行分割
+                outs() << "222" << "\n";
                 curBB = curBB->splitBasicBlock(&I);
                 break;
             }
@@ -65,8 +70,10 @@ void SplitBasicBlock::split(BasicBlock *BB){
 
 bool SplitBasicBlock::containsPHI(BasicBlock *BB){
     for(Instruction &I : *BB){
+        if(isa<PHINode>(&I)){
             return true;
         }
+    }
     return false;
 }
 

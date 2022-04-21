@@ -25,8 +25,12 @@ llvm/IR/Intrinsics.h
 /home/ubuntu/github-project/llvm-pass/RandomControlFlow/RandomControlFlow/llvm/IR/Intrinsics.h
 llvm/IR/IntrinsicsX86.h
 /home/ubuntu/github-project/llvm-pass/RandomControlFlow/RandomControlFlow/llvm/IR/IntrinsicsX86.h
-llvm/Transforms/Obfuscation/Utils.h
-/home/ubuntu/github-project/llvm-pass/RandomControlFlow/RandomControlFlow/llvm/Transforms/Obfuscation/Utils.h
+llvm/IR/Instructions.h
+/home/ubuntu/github-project/llvm-pass/RandomControlFlow/RandomControlFlow/llvm/IR/Instructions.h
+llvm/Transforms/Utils/ValueMapper.h
+/home/ubuntu/github-project/llvm-pass/RandomControlFlow/RandomControlFlow/llvm/Transforms/Utils/ValueMapper.h
+llvm/Transforms/Utils/Cloning.h
+/home/ubuntu/github-project/llvm-pass/RandomControlFlow/RandomControlFlow/llvm/Transforms/Utils/Cloning.h
 vector
 -
 cstdlib

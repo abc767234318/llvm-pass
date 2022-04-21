@@ -7,12 +7,25 @@
 #include "llvm/Transforms/Utils/Local.h"
 #include "llvm/IR/Intrinsics.h"
 #include "llvm/IR/IntrinsicsX86.h"
-#include "llvm/Transforms/Obfuscation/Utils.h"
+#include "llvm/IR/Instructions.h"
+#include "llvm/Transforms/Utils/ValueMapper.h"
+#include "llvm/Transforms/Utils/Cloning.h"
 #include <vector>
 #include <cstdlib>
 #include <ctime>
 using std::vector;
 using namespace llvm;
+
+llvm::LLVMContext *CONTEXT;
+#define INIT_CONTEXT(X) CONTEXT=&X.getContext()
+#define TYPE_I64 Type::getInt64Ty(*CONTEXT)
+#define TYPE_I32 Type::getInt32Ty(*CONTEXT)
+#define TYPE_I8 Type::getInt8Ty(*CONTEXT)
+#define GET_TYPE(X) TYPE::getInt(X)Ty(*CONTEXT)
+#define CONST_I64(V) ConstantInt::get(TYPE_I64, V, false)
+#define CONST_I32(V) ConstantInt::get(TYPE_I32, V, false)
+#define CONST_I8(V) ConstantInt::get(TYPE_I8, V, false)
+#define CONST(T, V) ConstantInt::get(T, V)
 
 namespace
 {
@@ -36,6 +49,46 @@ namespace
         // 以基本块为单位进行随机控制流混淆
         bool randcf(BasicBlock *BB);
     };
+}
+
+BasicBlock* createCloneBasicBlock(BasicBlock *BB){
+    // 克隆之前先修复所有逃逸变量
+    vector<Instruction*> origReg;
+    BasicBlock &entryBB = BB->getParent()->getEntryBlock();
+    for(Instruction &I : *BB){
+        if(!(isa<AllocaInst>(&I) && I.getParent() == &entryBB) 
+            && I.isUsedOutsideOfBlock(BB)){
+            origReg.push_back(&I);
+        }
+    }
+    for(Instruction *I : origReg){
+        DemoteRegToStack(*I, entryBB.getTerminator());
+    }
+    ValueToValueMapTy VMap;
+    BasicBlock *cloneBB = CloneBasicBlock(BB, VMap, "cloneBB", BB->getParent());
+    BasicBlock::iterator origI = BB->begin();
+    // 对克隆基本块的引用进行修复
+    for(Instruction &I : *cloneBB){
+        for(int i = 0;i < I.getNumOperands();i ++){
+            Value *V = MapValue(I.getOperand(i), VMap);
+            if(V){
+                I.setOperand(i, V);
+            }
+        }
+        // SmallVector<std::pair<unsigned, MDNode *>, 4> MDs;
+        // I.getAllMetadata(MDs);
+        // for(std::pair<unsigned, MDNode *> pair : MDs){
+        //     MDNode *MD = MapMetadata(pair.second, VMap);
+        //     if(MD){
+        //         errs() << "DEBUG1: " << *pair.second << "\n";
+        //         errs() << "DEBUG2: " << *MD << "\n";
+        //         I.setMetadata(pair.first, MD);
+        //     }
+        // }
+        //I.setDebugLoc(origI->getDebugLoc());
+        origI++;
+    }
+    return cloneBB;
 }
 
 // 混淆次数，混淆次数越多混淆结果越复杂

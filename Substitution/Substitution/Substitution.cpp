@@ -93,7 +93,7 @@ int ObfuTimes = 1;
 static IRBuilder<> *builder = nullptr;
 
 bool Substitution::runOnFunction(Function &F){
-    if(enable){
+    if(1){
         INIT_CONTEXT(F);
         builder = new IRBuilder<>(*CONTEXT);
         for(int i = 0;i < ObfuTimes;i ++){
@@ -116,6 +116,7 @@ bool Substitution::runOnFunction(Function &F){
 }
 
 void Substitution::substitute(BinaryOperator *BI){
+    dbgs() << "123123";
     builder->SetInsertPoint(BI);
     switch (BI->getOpcode()) {
         case BinaryOperator::Add:
@@ -140,6 +141,7 @@ void Substitution::substitute(BinaryOperator *BI){
 
 
 void Substitution::substituteAdd(BinaryOperator *BI){
+    dbgs() << "123123";
     int choice = rand() % NUMBER_ADD_SUBST;
     switch (choice) {
         case 0:

@@ -10,6 +10,9 @@ int main(int argc, char *argv[]){
     scanf("input flag %d\n",&flag);
     int outlen;
     int i = 10;
+    i = i + 10 - 12;
+    i = i - i + i;
+    i = i + 4;
     while (i != 0){
         flag++;
         printf("the flag is %d\n",flag);
