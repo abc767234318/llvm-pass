@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -Wl,-rpath-link,  -Wl,--gc-sections -shared  -o SplitBasicBlock.so CMakeFiles/SplitBasicBlock.dir/SplitBasicBlock.o  -Wl,-rpath,"\$ORIGIN/../lib" 

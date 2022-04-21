@@ -82,7 +82,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"LLVMPassname\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"RandomControlFlow\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -196,43 +196,43 @@ intrinsics_gen/fast:
 .PHONY : intrinsics_gen/fast
 
 #=============================================================================
-# Target rules for targets named install-LLVMPassname-stripped
+# Target rules for targets named install-RandomControlFlow-stripped
 
 # Build rule for target.
-install-LLVMPassname-stripped: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 install-LLVMPassname-stripped
-.PHONY : install-LLVMPassname-stripped
+install-RandomControlFlow-stripped: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 install-RandomControlFlow-stripped
+.PHONY : install-RandomControlFlow-stripped
 
 # fast build rule for target.
-install-LLVMPassname-stripped/fast:
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build
-.PHONY : install-LLVMPassname-stripped/fast
+install-RandomControlFlow-stripped/fast:
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build
+.PHONY : install-RandomControlFlow-stripped/fast
 
 #=============================================================================
-# Target rules for targets named install-LLVMPassname
+# Target rules for targets named install-RandomControlFlow
 
 # Build rule for target.
-install-LLVMPassname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 install-LLVMPassname
-.PHONY : install-LLVMPassname
+install-RandomControlFlow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 install-RandomControlFlow
+.PHONY : install-RandomControlFlow
 
 # fast build rule for target.
-install-LLVMPassname/fast:
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build
-.PHONY : install-LLVMPassname/fast
+install-RandomControlFlow/fast:
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build
+.PHONY : install-RandomControlFlow/fast
 
 #=============================================================================
-# Target rules for targets named LLVMPassname
+# Target rules for targets named RandomControlFlow
 
 # Build rule for target.
-LLVMPassname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LLVMPassname
-.PHONY : LLVMPassname
+RandomControlFlow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow
+.PHONY : RandomControlFlow
 
 # fast build rule for target.
-LLVMPassname/fast:
-	$(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/build
-.PHONY : LLVMPassname/fast
+RandomControlFlow/fast:
+	$(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build
+.PHONY : RandomControlFlow/fast
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... omp_gen"
 	@echo "... install/strip"
 	@echo "... intrinsics_gen"
-	@echo "... install-LLVMPassname-stripped"
-	@echo "... install-LLVMPassname"
-	@echo "... LLVMPassname"
+	@echo "... install-RandomControlFlow-stripped"
+	@echo "... install-RandomControlFlow"
+	@echo "... RandomControlFlow"
 .PHONY : help
 
 

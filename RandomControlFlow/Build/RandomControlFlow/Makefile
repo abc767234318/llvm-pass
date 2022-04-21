@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"LLVMPassname\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"RandomControlFlow\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -157,63 +157,63 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/rule:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/rule
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/rule
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname-stripped: RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+install-RandomControlFlow-stripped: RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/rule
 
-.PHONY : install-LLVMPassname-stripped
+.PHONY : install-RandomControlFlow-stripped
 
 # fast build rule for target.
-install-LLVMPassname-stripped/fast:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build
-.PHONY : install-LLVMPassname-stripped/fast
+install-RandomControlFlow-stripped/fast:
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build
+.PHONY : install-RandomControlFlow-stripped/fast
 
 # Convenience name for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/rule:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/rule
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/rule
+RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/rule
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname: RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/rule
+install-RandomControlFlow: RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/rule
 
-.PHONY : install-LLVMPassname
+.PHONY : install-RandomControlFlow
 
 # fast build rule for target.
-install-LLVMPassname/fast:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build
-.PHONY : install-LLVMPassname/fast
+install-RandomControlFlow/fast:
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build
+.PHONY : install-RandomControlFlow/fast
 
 # Convenience name for target.
-RandomControlFlow/CMakeFiles/LLVMPassname.dir/rule:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/LLVMPassname.dir/rule
-.PHONY : RandomControlFlow/CMakeFiles/LLVMPassname.dir/rule
+RandomControlFlow/CMakeFiles/RandomControlFlow.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/RandomControlFlow.dir/rule
+.PHONY : RandomControlFlow/CMakeFiles/RandomControlFlow.dir/rule
 
 # Convenience name for target.
-LLVMPassname: RandomControlFlow/CMakeFiles/LLVMPassname.dir/rule
+RandomControlFlow: RandomControlFlow/CMakeFiles/RandomControlFlow.dir/rule
 
-.PHONY : LLVMPassname
+.PHONY : RandomControlFlow
 
 # fast build rule for target.
-LLVMPassname/fast:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/build
-.PHONY : LLVMPassname/fast
+RandomControlFlow/fast:
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build
+.PHONY : RandomControlFlow/fast
 
 # target to build an object file
 RandomControlFlow.o:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/RandomControlFlow.o
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/RandomControlFlow.o
 .PHONY : RandomControlFlow.o
 
 # target to preprocess a source file
 RandomControlFlow.i:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/RandomControlFlow.i
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/RandomControlFlow.i
 .PHONY : RandomControlFlow.i
 
 # target to generate assembly for a file
 RandomControlFlow.s:
-	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/RandomControlFlow.s
+	cd /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build && $(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/RandomControlFlow.s
 .PHONY : RandomControlFlow.s
 
 # Help Target
@@ -227,10 +227,10 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... install-LLVMPassname-stripped"
 	@echo "... edit_cache"
-	@echo "... install-LLVMPassname"
-	@echo "... LLVMPassname"
+	@echo "... install-RandomControlFlow-stripped"
+	@echo "... install-RandomControlFlow"
+	@echo "... RandomControlFlow"
 	@echo "... RandomControlFlow.o"
 	@echo "... RandomControlFlow.i"
 	@echo "... RandomControlFlow.s"

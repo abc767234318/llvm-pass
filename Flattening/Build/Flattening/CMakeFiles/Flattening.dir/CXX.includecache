@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/Flattening.cpp
+llvm/InitializePasses.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/InitializePasses.h
+llvm/Transforms/Scalar.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Transforms/Scalar.h
+llvm/Support/raw_ostream.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Support/raw_ostream.h
+llvm/IR/Instructions.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/IR/Instructions.h
+llvm/Transforms/Utils.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Transforms/Utils.h
+llvm/Support/CommandLine.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Support/CommandLine.h
+llvm/Transforms/Utils/Local.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Transforms/Utils/Local.h
+llvm/Transforms/Obfuscation/Utils.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Transforms/Obfuscation/Utils.h
+llvm/Transforms/Obfuscation/CryptoUtils.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Transforms/Obfuscation/CryptoUtils.h
+vector
+-
+llvm/Pass.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/Pass.h
+llvm/IR/Function.h
+/home/ubuntu/github-project/llvm-pass/Flattening/Flattening/llvm/IR/Function.h
+

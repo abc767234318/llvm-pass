@@ -197,7 +197,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=RandomControlFlow
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -275,12 +275,6 @@ Project_BINARY_DIR:STATIC=/home/ubuntu/github-project/llvm-pass/RandomControlFlo
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/ubuntu/github-project/llvm-pass/RandomControlFlow
-
-//Value Computed by CMake
-RandomControlFlow_BINARY_DIR:STATIC=/home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build
-
-//Value Computed by CMake
-RandomControlFlow_SOURCE_DIR:STATIC=/home/ubuntu/github-project/llvm-pass/RandomControlFlow
 
 //Path to a library.
 Terminfo_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinfo.so

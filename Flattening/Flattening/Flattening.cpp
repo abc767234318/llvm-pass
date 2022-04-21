@@ -5,21 +5,38 @@
 #include "llvm/Transforms/Utils.h"
 #include "llvm/Support/CommandLine.h"
 #include "llvm/Transforms/Utils/Local.h"
-#include "llvm/Transforms/Obfuscation/Flattening.h"
 #include "llvm/Transforms/Obfuscation/Utils.h"
 #include "llvm/Transforms/Obfuscation/CryptoUtils.h"
 #include <vector>
+#include "llvm/Pass.h"
+#include "llvm/IR/Function.h"
 
 using namespace llvm;
 using std::vector;
- 
+
+namespace {
+    class Flattening : public FunctionPass{
+        public:
+            static char ID;
+            bool enable;
+
+            Flattening() : FunctionPass(ID){
+                
+            }
+
+            void flatten(Function &F);
+    
+            bool runOnFunction(Function &F);
+    };
+
+}
+
+
 bool Flattening::runOnFunction(Function &F){
-    if(enable && readAnnotate(&F).find("fla1")){
-        INIT_CONTEXT(F);
-        flatten(F);
-        return true;
-    }
-    return false;
+
+    INIT_CONTEXT(F);
+    flatten(F);
+    return true;
 }
  
 void Flattening::flatten(Function &F){
@@ -48,8 +65,8 @@ void Flattening::flatten(Function &F){
     }
 
     // 创建分发块和返回块
-    BasicBlock *dispatchBB = BasicBlock::Create(*CONTEXT, "dispatchBB", &F, &entryBB);
-    BasicBlock *returnBB = BasicBlock::Create(*CONTEXT, "returnBB", &F, &entryBB);
+    BasicBlock *dispatchBB = BasicBlock::Create(F.getContext(), "dispatchBB", &F, &entryBB);
+    BasicBlock *returnBB = BasicBlock::Create(F.getContext(), "returnBB", &F, &entryBB);
     BranchInst::Create(dispatchBB, returnBB);
     entryBB.moveBefore(dispatchBB);
     // 去除第一个基本块末尾的跳转
@@ -58,20 +75,20 @@ void Flattening::flatten(Function &F){
     BranchInst *brDispatchBB = BranchInst::Create(dispatchBB, &entryBB);
 
     // 在入口块插入alloca和store指令创建并初始化switch变量，初始值为随机值
-    uint32_t randNumCase = cryptoutils->get_uint32_t();
+    uint32_t randNumCase = rand();
     AllocaInst *swVarPtr = new AllocaInst(TYPE_I32, 0, "swVar.ptr", brDispatchBB);
     new StoreInst(CONST_I32(randNumCase), swVarPtr, brDispatchBB);
     // 在分发块插入load指令读取switch变量
     LoadInst *swVar = new LoadInst(TYPE_I32, swVarPtr, "swVar", false, dispatchBB);
     // 在分发块插入switch指令实现基本块的调度
-    BasicBlock *swDefault = BasicBlock::Create(*CONTEXT, "swDefault", &F, returnBB);
+    BasicBlock *swDefault = BasicBlock::Create(F.getContext(), "swDefault", &F, returnBB);
     BranchInst::Create(returnBB, swDefault);
     SwitchInst *swInst = SwitchInst::Create(swVar, swDefault, 0, dispatchBB);
     // 将原基本块插入到返回块之前，并分配case值
     for(BasicBlock *BB : origBB){
         BB->moveBefore(returnBB);
         swInst->addCase(CONST_I32(randNumCase), BB);
-        randNumCase = cryptoutils->get_uint32_t();
+        randNumCase = rand();
     }
 
     // 在每个基本块最后添加修改switch变量的指令和跳转到返回块的指令

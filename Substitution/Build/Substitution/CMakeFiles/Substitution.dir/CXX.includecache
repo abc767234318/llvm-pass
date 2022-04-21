@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/github-project/llvm-pass/Substitution/Substitution/Substitution.cpp
+llvm/IR/Function.h
+/home/ubuntu/github-project/llvm-pass/Substitution/Substitution/llvm/IR/Function.h
+llvm/Pass.h
+/home/ubuntu/github-project/llvm-pass/Substitution/Substitution/llvm/Pass.h
+llvm/IR/Instructions.h
+/home/ubuntu/github-project/llvm-pass/Substitution/Substitution/llvm/IR/Instructions.h
+llvm/Support/raw_ostream.h
+/home/ubuntu/github-project/llvm-pass/Substitution/Substitution/llvm/Support/raw_ostream.h
+llvm/Support/CommandLine.h
+/home/ubuntu/github-project/llvm-pass/Substitution/Substitution/llvm/Support/CommandLine.h
+llvm/IR/IRBuilder.h
+/home/ubuntu/github-project/llvm-pass/Substitution/Substitution/llvm/IR/IRBuilder.h
+vector
+-
+

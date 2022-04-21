@@ -1,3 +1,5 @@
+#include "llvm/IR/Function.h"
+#include "llvm/Pass.h"
 #include "llvm/Support/raw_ostream.h"
 #include "llvm/Support/CommandLine.h"
 #include "llvm/IR/Module.h"
@@ -6,34 +8,62 @@
 #include "llvm/IR/Intrinsics.h"
 #include "llvm/IR/IntrinsicsX86.h"
 #include "llvm/Transforms/Obfuscation/Utils.h"
-#include "llvm/Transforms/Obfuscation/RandomControlFlow.h"
 #include <vector>
 #include <cstdlib>
 #include <ctime>
 using std::vector;
 using namespace llvm;
 
-// 混淆次数，混淆次数越多混淆结果越复杂
-static cl::opt<int> ObfuTimes("rcf-times", cl::init(1), cl::desc("Run RandomControlFlow pass <rcf-times> time(s)"));
+namespace
+{
+    class RandomControlFlow : public FunctionPass
+    {
+    public:
+        static char ID;
+        bool enable;
 
-bool RandomControlFlow::runOnFunction(Function &F){
-    if(enable){
-        INIT_CONTEXT(F);
-        for(int i = 0;i < ObfuTimes;i ++){
-            vector<BasicBlock*> origBB;
-            for(BasicBlock &BB : F){
-                origBB.push_back(&BB);
-            }
-            for(BasicBlock *BB : origBB){
-                randcf(BB);
-            }
+        RandomControlFlow() : FunctionPass(ID)
+        {
         }
-        return true;
-    }
-    return false;
+
+        bool runOnFunction(Function &F);
+
+        // 创建一组等效于 origVar 的指令
+        Value *alterVal(Value *origVar, BasicBlock *insertAfter);
+
+        void insertRandomBranch(Value *randVar, BasicBlock *ifTrue, BasicBlock *ifFalse, BasicBlock *insertAfter);
+
+        // 以基本块为单位进行随机控制流混淆
+        bool randcf(BasicBlock *BB);
+    };
 }
 
-void RandomControlFlow::insertRandomBranch(Value *randVar, BasicBlock *ifTrue, BasicBlock *ifFalse, BasicBlock *insertAfter){
+// 混淆次数，混淆次数越多混淆结果越复杂
+//static cl::opt<int> ObfuTimes("rcf-times", cl::init(1), cl::desc("Run RandomControlFlow pass <rcf-times> time(s)"));
+int ObfuTimes = 1;
+
+bool RandomControlFlow::runOnFunction(Function &F)
+{
+
+    INIT_CONTEXT(F);
+    for (int i = 0; i < ObfuTimes; i++)
+    {
+        vector<BasicBlock *> origBB;
+        for (BasicBlock &BB : F)
+        {
+            origBB.push_back(&BB);
+        }
+        for (BasicBlock *BB : origBB)
+        {
+            randcf(BB);
+        }
+    }
+    return true;
+
+}
+
+void RandomControlFlow::insertRandomBranch(Value *randVar, BasicBlock *ifTrue, BasicBlock *ifFalse, BasicBlock *insertAfter)
+{
     // 对随机数进行等价变换
     Value *alteredRandVar = alterVal(randVar, insertAfter);
     Value *randMod2 = BinaryOperator::Create(Instruction::And, alteredRandVar, CONST_I32(1), "", insertAfter);
@@ -41,7 +71,8 @@ void RandomControlFlow::insertRandomBranch(Value *randVar, BasicBlock *ifTrue, B
     BranchInst::Create(ifTrue, ifFalse, condition, insertAfter);
 }
 
-bool RandomControlFlow::randcf(BasicBlock *BB){
+bool RandomControlFlow::randcf(BasicBlock *BB)
+{
     // 拆分得到 entryBB, bodyBB, endBB
     // 其中所有的 PHI 指令都在 entryBB(如果有的话)
     // endBB 只包含一条终结指令
@@ -49,7 +80,7 @@ bool RandomControlFlow::randcf(BasicBlock *BB){
     BasicBlock *bodyBB = entryBB->splitBasicBlock(BB->getFirstNonPHIOrDbgOrLifetime(), "bodyBB");
     BasicBlock *endBB = bodyBB->splitBasicBlock(bodyBB->getTerminator(), "endBB");
     BasicBlock *cloneBB = createCloneBasicBlock(bodyBB);
-    
+
     // 在 entryBB 后插入随机跳转，使其能够随机跳转到第 bodyBB 或其克隆基本块 cloneBB
     entryBB->getTerminator()->eraseFromParent();
     // 老方案：通过rdrand指令生成随机数
@@ -80,18 +111,22 @@ bool RandomControlFlow::randcf(BasicBlock *BB){
     return true;
 }
 
-Value* RandomControlFlow::alterVal(Value *startVar,BasicBlock *insertAfter){
+Value *RandomControlFlow::alterVal(Value *startVar, BasicBlock *insertAfter)
+{
     uint32_t code = rand() % 3;
     Value *result;
-    if(code == 0){
-        //x = x * (x + 1) - x^2
+    if (code == 0)
+    {
+        // x = x * (x + 1) - x^2
         BinaryOperator *op1 = BinaryOperator::Create(Instruction::Add, startVar, CONST_I32(1), "", insertAfter);
         BinaryOperator *op2 = BinaryOperator::Create(Instruction::Mul, startVar, op1, "", insertAfter);
         BinaryOperator *op3 = BinaryOperator::Create(Instruction::Mul, startVar, startVar, "", insertAfter);
         BinaryOperator *op4 = BinaryOperator::Create(Instruction::Sub, op2, op3, "", insertAfter);
         result = op4;
-    }else if(code == 1){
-        //x = 3 * x * (x - 2) - 3 * x^2 + 7 * x
+    }
+    else if (code == 1)
+    {
+        // x = 3 * x * (x - 2) - 3 * x^2 + 7 * x
         BinaryOperator *op1 = BinaryOperator::Create(Instruction::Mul, startVar, CONST_I32(3), "", insertAfter);
         BinaryOperator *op2 = BinaryOperator::Create(Instruction::Sub, startVar, CONST_I32(2), "", insertAfter);
         BinaryOperator *op3 = BinaryOperator::Create(Instruction::Mul, op1, op2, "", insertAfter);
@@ -101,8 +136,10 @@ Value* RandomControlFlow::alterVal(Value *startVar,BasicBlock *insertAfter){
         BinaryOperator *op7 = BinaryOperator::Create(Instruction::Sub, op3, op5, "", insertAfter);
         BinaryOperator *op8 = BinaryOperator::Create(Instruction::Add, op6, op7, "", insertAfter);
         result = op8;
-    }else if(code == 2){
-        //x = (x - 1) * (x + 3) - (x + 4) * (x - 3) - 9
+    }
+    else if (code == 2)
+    {
+        // x = (x - 1) * (x + 3) - (x + 4) * (x - 3) - 9
         BinaryOperator *op1 = BinaryOperator::Create(Instruction::Sub, startVar, CONST_I32(1), "", insertAfter);
         BinaryOperator *op2 = BinaryOperator::Create(Instruction::Add, startVar, CONST_I32(3), "", insertAfter);
         BinaryOperator *op3 = BinaryOperator::Create(Instruction::Add, startVar, CONST_I32(4), "", insertAfter);

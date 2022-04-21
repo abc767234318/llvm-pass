@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"LLVMPassname\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Flattening\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -157,63 +157,63 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/rule:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/rule
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+Flattening/CMakeFiles/install-Flattening-stripped.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-Flattening-stripped.dir/rule
+.PHONY : Flattening/CMakeFiles/install-Flattening-stripped.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname-stripped: Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+install-Flattening-stripped: Flattening/CMakeFiles/install-Flattening-stripped.dir/rule
 
-.PHONY : install-LLVMPassname-stripped
+.PHONY : install-Flattening-stripped
 
 # fast build rule for target.
-install-LLVMPassname-stripped/fast:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build.make Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build
-.PHONY : install-LLVMPassname-stripped/fast
+install-Flattening-stripped/fast:
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/install-Flattening-stripped.dir/build.make Flattening/CMakeFiles/install-Flattening-stripped.dir/build
+.PHONY : install-Flattening-stripped/fast
 
 # Convenience name for target.
-Flattening/CMakeFiles/install-LLVMPassname.dir/rule:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-LLVMPassname.dir/rule
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname.dir/rule
+Flattening/CMakeFiles/install-Flattening.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-Flattening.dir/rule
+.PHONY : Flattening/CMakeFiles/install-Flattening.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname: Flattening/CMakeFiles/install-LLVMPassname.dir/rule
+install-Flattening: Flattening/CMakeFiles/install-Flattening.dir/rule
 
-.PHONY : install-LLVMPassname
+.PHONY : install-Flattening
 
 # fast build rule for target.
-install-LLVMPassname/fast:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname.dir/build.make Flattening/CMakeFiles/install-LLVMPassname.dir/build
-.PHONY : install-LLVMPassname/fast
+install-Flattening/fast:
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/install-Flattening.dir/build.make Flattening/CMakeFiles/install-Flattening.dir/build
+.PHONY : install-Flattening/fast
 
 # Convenience name for target.
-Flattening/CMakeFiles/LLVMPassname.dir/rule:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/LLVMPassname.dir/rule
-.PHONY : Flattening/CMakeFiles/LLVMPassname.dir/rule
+Flattening/CMakeFiles/Flattening.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/Flattening.dir/rule
+.PHONY : Flattening/CMakeFiles/Flattening.dir/rule
 
 # Convenience name for target.
-LLVMPassname: Flattening/CMakeFiles/LLVMPassname.dir/rule
+Flattening: Flattening/CMakeFiles/Flattening.dir/rule
 
-.PHONY : LLVMPassname
+.PHONY : Flattening
 
 # fast build rule for target.
-LLVMPassname/fast:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/build
-.PHONY : LLVMPassname/fast
+Flattening/fast:
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/build
+.PHONY : Flattening/fast
 
 # target to build an object file
 Flattening.o:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/Flattening.o
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/Flattening.o
 .PHONY : Flattening.o
 
 # target to preprocess a source file
 Flattening.i:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/Flattening.i
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/Flattening.i
 .PHONY : Flattening.i
 
 # target to generate assembly for a file
 Flattening.s:
-	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/Flattening.s
+	cd /home/ubuntu/github-project/llvm-pass/Flattening/Build && $(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/Flattening.s
 .PHONY : Flattening.s
 
 # Help Target
@@ -227,10 +227,10 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... install-LLVMPassname-stripped"
 	@echo "... edit_cache"
-	@echo "... install-LLVMPassname"
-	@echo "... LLVMPassname"
+	@echo "... install-Flattening-stripped"
+	@echo "... install-Flattening"
+	@echo "... Flattening"
 	@echo "... Flattening.o"
 	@echo "... Flattening.i"
 	@echo "... Flattening.s"

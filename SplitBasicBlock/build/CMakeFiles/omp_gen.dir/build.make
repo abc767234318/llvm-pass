@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock
+CMAKE_SOURCE_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build
+CMAKE_BINARY_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build
 
 # Utility rule file for omp_gen.
 
@@ -67,6 +67,6 @@ CMakeFiles/omp_gen.dir/clean:
 .PHONY : CMakeFiles/omp_gen.dir/clean
 
 CMakeFiles/omp_gen.dir/depend:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles/omp_gen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/github-project/llvm-pass/SplitBasicBlock /home/ubuntu/github-project/llvm-pass/SplitBasicBlock /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles/omp_gen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/omp_gen.dir/depend
 

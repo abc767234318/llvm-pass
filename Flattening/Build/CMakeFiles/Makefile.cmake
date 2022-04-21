@@ -138,7 +138,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/acc_gen.dir/DependInfo.cmake"
   "CMakeFiles/omp_gen.dir/DependInfo.cmake"
   "CMakeFiles/intrinsics_gen.dir/DependInfo.cmake"
-  "Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/DependInfo.cmake"
-  "Flattening/CMakeFiles/install-LLVMPassname.dir/DependInfo.cmake"
-  "Flattening/CMakeFiles/LLVMPassname.dir/DependInfo.cmake"
+  "Flattening/CMakeFiles/install-Flattening-stripped.dir/DependInfo.cmake"
+  "Flattening/CMakeFiles/install-Flattening.dir/DependInfo.cmake"
+  "Flattening/CMakeFiles/Flattening.dir/DependInfo.cmake"
   )

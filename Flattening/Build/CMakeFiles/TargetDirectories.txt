@@ -12,7 +12,7 @@
 /home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/install.dir
 /home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/list_install_components.dir
 /home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/install-LLVMPassname-stripped.dir
 /home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/edit_cache.dir
-/home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/install-LLVMPassname.dir
-/home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/LLVMPassname.dir
+/home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/install-Flattening-stripped.dir
+/home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/install-Flattening.dir
+/home/ubuntu/github-project/llvm-pass/Flattening/Build/Flattening/CMakeFiles/Flattening.dir

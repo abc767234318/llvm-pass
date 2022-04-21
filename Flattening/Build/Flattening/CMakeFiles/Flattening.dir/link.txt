@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -Wl,-rpath-link,  -Wl,--gc-sections -shared  -o Flattening.so CMakeFiles/Flattening.dir/Flattening.o  -Wl,-rpath,"\$ORIGIN/../lib" 

@@ -82,7 +82,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"LLVMPassname\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Flattening\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -196,43 +196,43 @@ intrinsics_gen/fast:
 .PHONY : intrinsics_gen/fast
 
 #=============================================================================
-# Target rules for targets named install-LLVMPassname-stripped
+# Target rules for targets named install-Flattening-stripped
 
 # Build rule for target.
-install-LLVMPassname-stripped: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 install-LLVMPassname-stripped
-.PHONY : install-LLVMPassname-stripped
+install-Flattening-stripped: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 install-Flattening-stripped
+.PHONY : install-Flattening-stripped
 
 # fast build rule for target.
-install-LLVMPassname-stripped/fast:
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build.make Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build
-.PHONY : install-LLVMPassname-stripped/fast
+install-Flattening-stripped/fast:
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening-stripped.dir/build.make Flattening/CMakeFiles/install-Flattening-stripped.dir/build
+.PHONY : install-Flattening-stripped/fast
 
 #=============================================================================
-# Target rules for targets named install-LLVMPassname
+# Target rules for targets named install-Flattening
 
 # Build rule for target.
-install-LLVMPassname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 install-LLVMPassname
-.PHONY : install-LLVMPassname
+install-Flattening: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 install-Flattening
+.PHONY : install-Flattening
 
 # fast build rule for target.
-install-LLVMPassname/fast:
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname.dir/build.make Flattening/CMakeFiles/install-LLVMPassname.dir/build
-.PHONY : install-LLVMPassname/fast
+install-Flattening/fast:
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening.dir/build.make Flattening/CMakeFiles/install-Flattening.dir/build
+.PHONY : install-Flattening/fast
 
 #=============================================================================
-# Target rules for targets named LLVMPassname
+# Target rules for targets named Flattening
 
 # Build rule for target.
-LLVMPassname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LLVMPassname
-.PHONY : LLVMPassname
+Flattening: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Flattening
+.PHONY : Flattening
 
 # fast build rule for target.
-LLVMPassname/fast:
-	$(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/build
-.PHONY : LLVMPassname/fast
+Flattening/fast:
+	$(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/build
+.PHONY : Flattening/fast
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... omp_gen"
 	@echo "... install/strip"
 	@echo "... intrinsics_gen"
-	@echo "... install-LLVMPassname-stripped"
-	@echo "... install-LLVMPassname"
-	@echo "... LLVMPassname"
+	@echo "... install-Flattening-stripped"
+	@echo "... install-Flattening"
+	@echo "... Flattening"
 .PHONY : help
 
 

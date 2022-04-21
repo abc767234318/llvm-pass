@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock
+CMAKE_SOURCE_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build
+CMAKE_BINARY_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,7 +82,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"LLVMPassname\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"SplitBasicBlock\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -126,9 +126,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -196,43 +196,43 @@ intrinsics_gen/fast:
 .PHONY : intrinsics_gen/fast
 
 #=============================================================================
-# Target rules for targets named install-LLVMPassname-stripped
+# Target rules for targets named install-SplitBasicBlock-stripped
 
 # Build rule for target.
-install-LLVMPassname-stripped: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 install-LLVMPassname-stripped
-.PHONY : install-LLVMPassname-stripped
+install-SplitBasicBlock-stripped: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 install-SplitBasicBlock-stripped
+.PHONY : install-SplitBasicBlock-stripped
 
 # fast build rule for target.
-install-LLVMPassname-stripped/fast:
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build
-.PHONY : install-LLVMPassname-stripped/fast
+install-SplitBasicBlock-stripped/fast:
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build
+.PHONY : install-SplitBasicBlock-stripped/fast
 
 #=============================================================================
-# Target rules for targets named install-LLVMPassname
+# Target rules for targets named install-SplitBasicBlock
 
 # Build rule for target.
-install-LLVMPassname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 install-LLVMPassname
-.PHONY : install-LLVMPassname
+install-SplitBasicBlock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 install-SplitBasicBlock
+.PHONY : install-SplitBasicBlock
 
 # fast build rule for target.
-install-LLVMPassname/fast:
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build
-.PHONY : install-LLVMPassname/fast
+install-SplitBasicBlock/fast:
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build
+.PHONY : install-SplitBasicBlock/fast
 
 #=============================================================================
-# Target rules for targets named LLVMPassname
+# Target rules for targets named SplitBasicBlock
 
 # Build rule for target.
-LLVMPassname: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LLVMPassname
-.PHONY : LLVMPassname
+SplitBasicBlock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock
+.PHONY : SplitBasicBlock
 
 # fast build rule for target.
-LLVMPassname/fast:
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build
-.PHONY : LLVMPassname/fast
+SplitBasicBlock/fast:
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build
+.PHONY : SplitBasicBlock/fast
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... omp_gen"
 	@echo "... install/strip"
 	@echo "... intrinsics_gen"
-	@echo "... install-LLVMPassname-stripped"
-	@echo "... install-LLVMPassname"
-	@echo "... LLVMPassname"
+	@echo "... install-SplitBasicBlock-stripped"
+	@echo "... install-SplitBasicBlock"
+	@echo "... SplitBasicBlock"
 .PHONY : help
 
 

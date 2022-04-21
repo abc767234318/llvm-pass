@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock
+CMAKE_SOURCE_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build
+CMAKE_BINARY_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,7 +94,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"LLVMPassname\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"SplitBasicBlock\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/SplitBasicBlock/CMakeFiles/progress.marks
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/SplitBasicBlock/CMakeFiles/progress.marks
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/clean
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,77 +143,77 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/preinstall
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/preinstall
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/rule:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/rule
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/rule
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname-stripped: SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+install-SplitBasicBlock-stripped: SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/rule
 
-.PHONY : install-LLVMPassname-stripped
+.PHONY : install-SplitBasicBlock-stripped
 
 # fast build rule for target.
-install-LLVMPassname-stripped/fast:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build
-.PHONY : install-LLVMPassname-stripped/fast
+install-SplitBasicBlock-stripped/fast:
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build
+.PHONY : install-SplitBasicBlock-stripped/fast
 
 # Convenience name for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/rule:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/rule
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/rule
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/rule
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname: SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/rule
+install-SplitBasicBlock: SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/rule
 
-.PHONY : install-LLVMPassname
+.PHONY : install-SplitBasicBlock
 
 # fast build rule for target.
-install-LLVMPassname/fast:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build
-.PHONY : install-LLVMPassname/fast
+install-SplitBasicBlock/fast:
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build
+.PHONY : install-SplitBasicBlock/fast
 
 # Convenience name for target.
-SplitBasicBlock/CMakeFiles/LLVMPassname.dir/rule:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/LLVMPassname.dir/rule
-.PHONY : SplitBasicBlock/CMakeFiles/LLVMPassname.dir/rule
+SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/rule:
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/rule
+.PHONY : SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/rule
 
 # Convenience name for target.
-LLVMPassname: SplitBasicBlock/CMakeFiles/LLVMPassname.dir/rule
+SplitBasicBlock: SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/rule
 
-.PHONY : LLVMPassname
+.PHONY : SplitBasicBlock
 
 # fast build rule for target.
-LLVMPassname/fast:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build
-.PHONY : LLVMPassname/fast
+SplitBasicBlock/fast:
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build
+.PHONY : SplitBasicBlock/fast
 
 # target to build an object file
 SplitBasicBlock.o:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/SplitBasicBlock.o
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/SplitBasicBlock.o
 .PHONY : SplitBasicBlock.o
 
 # target to preprocess a source file
 SplitBasicBlock.i:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/SplitBasicBlock.i
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/SplitBasicBlock.i
 .PHONY : SplitBasicBlock.i
 
 # target to generate assembly for a file
 SplitBasicBlock.s:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/SplitBasicBlock.s
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/SplitBasicBlock.s
 .PHONY : SplitBasicBlock.s
 
 # Help Target
@@ -227,10 +227,10 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... install-LLVMPassname-stripped"
+	@echo "... install-SplitBasicBlock-stripped"
 	@echo "... edit_cache"
-	@echo "... install-LLVMPassname"
-	@echo "... LLVMPassname"
+	@echo "... install-SplitBasicBlock"
+	@echo "... SplitBasicBlock"
 	@echo "... SplitBasicBlock.o"
 	@echo "... SplitBasicBlock.i"
 	@echo "... SplitBasicBlock.s"
@@ -245,6 +245,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

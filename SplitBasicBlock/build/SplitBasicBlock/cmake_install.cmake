@@ -1,4 +1,4 @@
-# Install script for directory: /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/SplitBasicBlock
+# Install script for directory: /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/SplitBasicBlock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,12 +37,12 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLLVMPassnamex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/SplitBasicBlock/LLVMPassname.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/LLVMPassname.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/LLVMPassname.so")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xSplitBasicBlockx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/SplitBasicBlock/SplitBasicBlock.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/SplitBasicBlock.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/SplitBasicBlock.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/LLVMPassname.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/SplitBasicBlock.so")
     endif()
   endif()
 endif()

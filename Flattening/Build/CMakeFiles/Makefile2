@@ -74,7 +74,7 @@ clean: Flattening/clean
 # Directory level rules for directory Flattening
 
 # Recursive "all" directory target.
-Flattening/all: Flattening/CMakeFiles/LLVMPassname.dir/all
+Flattening/all: Flattening/CMakeFiles/Flattening.dir/all
 
 .PHONY : Flattening/all
 
@@ -84,9 +84,9 @@ Flattening/preinstall:
 .PHONY : Flattening/preinstall
 
 # Recursive "clean" directory target.
-Flattening/clean: Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/clean
-Flattening/clean: Flattening/CMakeFiles/install-LLVMPassname.dir/clean
-Flattening/clean: Flattening/CMakeFiles/LLVMPassname.dir/clean
+Flattening/clean: Flattening/CMakeFiles/install-Flattening-stripped.dir/clean
+Flattening/clean: Flattening/CMakeFiles/install-Flattening.dir/clean
+Flattening/clean: Flattening/CMakeFiles/Flattening.dir/clean
 
 .PHONY : Flattening/clean
 
@@ -172,85 +172,85 @@ CMakeFiles/intrinsics_gen.dir/clean:
 .PHONY : CMakeFiles/intrinsics_gen.dir/clean
 
 #=============================================================================
-# Target rules for target Flattening/CMakeFiles/install-LLVMPassname-stripped.dir
+# Target rules for target Flattening/CMakeFiles/install-Flattening-stripped.dir
 
 # All Build rule for target.
-Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/all: Flattening/CMakeFiles/LLVMPassname.dir/all
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build.make Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/depend
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build.make Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles --progress-num= "Built target install-LLVMPassname-stripped"
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/all
+Flattening/CMakeFiles/install-Flattening-stripped.dir/all: Flattening/CMakeFiles/Flattening.dir/all
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening-stripped.dir/build.make Flattening/CMakeFiles/install-Flattening-stripped.dir/depend
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening-stripped.dir/build.make Flattening/CMakeFiles/install-Flattening-stripped.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles --progress-num= "Built target install-Flattening-stripped"
+.PHONY : Flattening/CMakeFiles/install-Flattening-stripped.dir/all
 
 # Build rule for subdir invocation for target.
-Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/rule: cmake_check_build_system
+Flattening/CMakeFiles/install-Flattening-stripped.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-Flattening-stripped.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles 0
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+.PHONY : Flattening/CMakeFiles/install-Flattening-stripped.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname-stripped: Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+install-Flattening-stripped: Flattening/CMakeFiles/install-Flattening-stripped.dir/rule
 
-.PHONY : install-LLVMPassname-stripped
+.PHONY : install-Flattening-stripped
 
 # clean rule for target.
-Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/clean:
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/build.make Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/clean
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname-stripped.dir/clean
+Flattening/CMakeFiles/install-Flattening-stripped.dir/clean:
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening-stripped.dir/build.make Flattening/CMakeFiles/install-Flattening-stripped.dir/clean
+.PHONY : Flattening/CMakeFiles/install-Flattening-stripped.dir/clean
 
 #=============================================================================
-# Target rules for target Flattening/CMakeFiles/install-LLVMPassname.dir
+# Target rules for target Flattening/CMakeFiles/install-Flattening.dir
 
 # All Build rule for target.
-Flattening/CMakeFiles/install-LLVMPassname.dir/all: Flattening/CMakeFiles/LLVMPassname.dir/all
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname.dir/build.make Flattening/CMakeFiles/install-LLVMPassname.dir/depend
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname.dir/build.make Flattening/CMakeFiles/install-LLVMPassname.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles --progress-num= "Built target install-LLVMPassname"
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname.dir/all
+Flattening/CMakeFiles/install-Flattening.dir/all: Flattening/CMakeFiles/Flattening.dir/all
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening.dir/build.make Flattening/CMakeFiles/install-Flattening.dir/depend
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening.dir/build.make Flattening/CMakeFiles/install-Flattening.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles --progress-num= "Built target install-Flattening"
+.PHONY : Flattening/CMakeFiles/install-Flattening.dir/all
 
 # Build rule for subdir invocation for target.
-Flattening/CMakeFiles/install-LLVMPassname.dir/rule: cmake_check_build_system
+Flattening/CMakeFiles/install-Flattening.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-LLVMPassname.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/install-Flattening.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles 0
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname.dir/rule
+.PHONY : Flattening/CMakeFiles/install-Flattening.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname: Flattening/CMakeFiles/install-LLVMPassname.dir/rule
+install-Flattening: Flattening/CMakeFiles/install-Flattening.dir/rule
 
-.PHONY : install-LLVMPassname
+.PHONY : install-Flattening
 
 # clean rule for target.
-Flattening/CMakeFiles/install-LLVMPassname.dir/clean:
-	$(MAKE) -f Flattening/CMakeFiles/install-LLVMPassname.dir/build.make Flattening/CMakeFiles/install-LLVMPassname.dir/clean
-.PHONY : Flattening/CMakeFiles/install-LLVMPassname.dir/clean
+Flattening/CMakeFiles/install-Flattening.dir/clean:
+	$(MAKE) -f Flattening/CMakeFiles/install-Flattening.dir/build.make Flattening/CMakeFiles/install-Flattening.dir/clean
+.PHONY : Flattening/CMakeFiles/install-Flattening.dir/clean
 
 #=============================================================================
-# Target rules for target Flattening/CMakeFiles/LLVMPassname.dir
+# Target rules for target Flattening/CMakeFiles/Flattening.dir
 
 # All Build rule for target.
-Flattening/CMakeFiles/LLVMPassname.dir/all:
-	$(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/depend
-	$(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles --progress-num=1,2 "Built target LLVMPassname"
-.PHONY : Flattening/CMakeFiles/LLVMPassname.dir/all
+Flattening/CMakeFiles/Flattening.dir/all:
+	$(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/depend
+	$(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles --progress-num=1,2 "Built target Flattening"
+.PHONY : Flattening/CMakeFiles/Flattening.dir/all
 
 # Build rule for subdir invocation for target.
-Flattening/CMakeFiles/LLVMPassname.dir/rule: cmake_check_build_system
+Flattening/CMakeFiles/Flattening.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/LLVMPassname.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Flattening/CMakeFiles/Flattening.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/Flattening/Build/CMakeFiles 0
-.PHONY : Flattening/CMakeFiles/LLVMPassname.dir/rule
+.PHONY : Flattening/CMakeFiles/Flattening.dir/rule
 
 # Convenience name for target.
-LLVMPassname: Flattening/CMakeFiles/LLVMPassname.dir/rule
+Flattening: Flattening/CMakeFiles/Flattening.dir/rule
 
-.PHONY : LLVMPassname
+.PHONY : Flattening
 
 # clean rule for target.
-Flattening/CMakeFiles/LLVMPassname.dir/clean:
-	$(MAKE) -f Flattening/CMakeFiles/LLVMPassname.dir/build.make Flattening/CMakeFiles/LLVMPassname.dir/clean
-.PHONY : Flattening/CMakeFiles/LLVMPassname.dir/clean
+Flattening/CMakeFiles/Flattening.dir/clean:
+	$(MAKE) -f Flattening/CMakeFiles/Flattening.dir/build.make Flattening/CMakeFiles/Flattening.dir/clean
+.PHONY : Flattening/CMakeFiles/Flattening.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

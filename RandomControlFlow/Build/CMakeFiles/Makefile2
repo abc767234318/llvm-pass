@@ -74,7 +74,7 @@ clean: RandomControlFlow/clean
 # Directory level rules for directory RandomControlFlow
 
 # Recursive "all" directory target.
-RandomControlFlow/all: RandomControlFlow/CMakeFiles/LLVMPassname.dir/all
+RandomControlFlow/all: RandomControlFlow/CMakeFiles/RandomControlFlow.dir/all
 
 .PHONY : RandomControlFlow/all
 
@@ -84,9 +84,9 @@ RandomControlFlow/preinstall:
 .PHONY : RandomControlFlow/preinstall
 
 # Recursive "clean" directory target.
-RandomControlFlow/clean: RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/clean
-RandomControlFlow/clean: RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/clean
-RandomControlFlow/clean: RandomControlFlow/CMakeFiles/LLVMPassname.dir/clean
+RandomControlFlow/clean: RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/clean
+RandomControlFlow/clean: RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/clean
+RandomControlFlow/clean: RandomControlFlow/CMakeFiles/RandomControlFlow.dir/clean
 
 .PHONY : RandomControlFlow/clean
 
@@ -172,85 +172,85 @@ CMakeFiles/intrinsics_gen.dir/clean:
 .PHONY : CMakeFiles/intrinsics_gen.dir/clean
 
 #=============================================================================
-# Target rules for target RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir
+# Target rules for target RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir
 
 # All Build rule for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/all: RandomControlFlow/CMakeFiles/LLVMPassname.dir/all
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/depend
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles --progress-num= "Built target install-LLVMPassname-stripped"
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/all
+RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/all: RandomControlFlow/CMakeFiles/RandomControlFlow.dir/all
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/depend
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles --progress-num= "Built target install-RandomControlFlow-stripped"
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/all
 
 # Build rule for subdir invocation for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/rule: cmake_check_build_system
+RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles 0
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname-stripped: RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+install-RandomControlFlow-stripped: RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/rule
 
-.PHONY : install-LLVMPassname-stripped
+.PHONY : install-RandomControlFlow-stripped
 
 # clean rule for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/clean:
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/clean
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname-stripped.dir/clean
+RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/clean:
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/clean
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow-stripped.dir/clean
 
 #=============================================================================
-# Target rules for target RandomControlFlow/CMakeFiles/install-LLVMPassname.dir
+# Target rules for target RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir
 
 # All Build rule for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/all: RandomControlFlow/CMakeFiles/LLVMPassname.dir/all
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/depend
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles --progress-num= "Built target install-LLVMPassname"
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/all
+RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/all: RandomControlFlow/CMakeFiles/RandomControlFlow.dir/all
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/depend
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles --progress-num= "Built target install-RandomControlFlow"
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/all
 
 # Build rule for subdir invocation for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/rule: cmake_check_build_system
+RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles 0
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/rule
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname: RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/rule
+install-RandomControlFlow: RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/rule
 
-.PHONY : install-LLVMPassname
+.PHONY : install-RandomControlFlow
 
 # clean rule for target.
-RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/clean:
-	$(MAKE) -f RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/clean
-.PHONY : RandomControlFlow/CMakeFiles/install-LLVMPassname.dir/clean
+RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/clean:
+	$(MAKE) -f RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/clean
+.PHONY : RandomControlFlow/CMakeFiles/install-RandomControlFlow.dir/clean
 
 #=============================================================================
-# Target rules for target RandomControlFlow/CMakeFiles/LLVMPassname.dir
+# Target rules for target RandomControlFlow/CMakeFiles/RandomControlFlow.dir
 
 # All Build rule for target.
-RandomControlFlow/CMakeFiles/LLVMPassname.dir/all:
-	$(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/depend
-	$(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles --progress-num=1,2 "Built target LLVMPassname"
-.PHONY : RandomControlFlow/CMakeFiles/LLVMPassname.dir/all
+RandomControlFlow/CMakeFiles/RandomControlFlow.dir/all:
+	$(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/depend
+	$(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles --progress-num=1,2 "Built target RandomControlFlow"
+.PHONY : RandomControlFlow/CMakeFiles/RandomControlFlow.dir/all
 
 # Build rule for subdir invocation for target.
-RandomControlFlow/CMakeFiles/LLVMPassname.dir/rule: cmake_check_build_system
+RandomControlFlow/CMakeFiles/RandomControlFlow.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/LLVMPassname.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 RandomControlFlow/CMakeFiles/RandomControlFlow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/RandomControlFlow/Build/CMakeFiles 0
-.PHONY : RandomControlFlow/CMakeFiles/LLVMPassname.dir/rule
+.PHONY : RandomControlFlow/CMakeFiles/RandomControlFlow.dir/rule
 
 # Convenience name for target.
-LLVMPassname: RandomControlFlow/CMakeFiles/LLVMPassname.dir/rule
+RandomControlFlow: RandomControlFlow/CMakeFiles/RandomControlFlow.dir/rule
 
-.PHONY : LLVMPassname
+.PHONY : RandomControlFlow
 
 # clean rule for target.
-RandomControlFlow/CMakeFiles/LLVMPassname.dir/clean:
-	$(MAKE) -f RandomControlFlow/CMakeFiles/LLVMPassname.dir/build.make RandomControlFlow/CMakeFiles/LLVMPassname.dir/clean
-.PHONY : RandomControlFlow/CMakeFiles/LLVMPassname.dir/clean
+RandomControlFlow/CMakeFiles/RandomControlFlow.dir/clean:
+	$(MAKE) -f RandomControlFlow/CMakeFiles/RandomControlFlow.dir/build.make RandomControlFlow/CMakeFiles/RandomControlFlow.dir/clean
+.PHONY : RandomControlFlow/CMakeFiles/RandomControlFlow.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

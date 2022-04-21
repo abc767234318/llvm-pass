@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock
+CMAKE_SOURCE_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build
+CMAKE_BINARY_DIR = /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,7 +74,7 @@ clean: SplitBasicBlock/clean
 # Directory level rules for directory SplitBasicBlock
 
 # Recursive "all" directory target.
-SplitBasicBlock/all: SplitBasicBlock/CMakeFiles/LLVMPassname.dir/all
+SplitBasicBlock/all: SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/all
 
 .PHONY : SplitBasicBlock/all
 
@@ -84,9 +84,9 @@ SplitBasicBlock/preinstall:
 .PHONY : SplitBasicBlock/preinstall
 
 # Recursive "clean" directory target.
-SplitBasicBlock/clean: SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/clean
-SplitBasicBlock/clean: SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/clean
-SplitBasicBlock/clean: SplitBasicBlock/CMakeFiles/LLVMPassname.dir/clean
+SplitBasicBlock/clean: SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/clean
+SplitBasicBlock/clean: SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/clean
+SplitBasicBlock/clean: SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/clean
 
 .PHONY : SplitBasicBlock/clean
 
@@ -97,14 +97,14 @@ SplitBasicBlock/clean: SplitBasicBlock/CMakeFiles/LLVMPassname.dir/clean
 CMakeFiles/acc_gen.dir/all:
 	$(MAKE) -f CMakeFiles/acc_gen.dir/build.make CMakeFiles/acc_gen.dir/depend
 	$(MAKE) -f CMakeFiles/acc_gen.dir/build.make CMakeFiles/acc_gen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target acc_gen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target acc_gen"
 .PHONY : CMakeFiles/acc_gen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/acc_gen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/acc_gen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 .PHONY : CMakeFiles/acc_gen.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/acc_gen.dir/clean:
 CMakeFiles/omp_gen.dir/all:
 	$(MAKE) -f CMakeFiles/omp_gen.dir/build.make CMakeFiles/omp_gen.dir/depend
 	$(MAKE) -f CMakeFiles/omp_gen.dir/build.make CMakeFiles/omp_gen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target omp_gen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target omp_gen"
 .PHONY : CMakeFiles/omp_gen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/omp_gen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/omp_gen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 .PHONY : CMakeFiles/omp_gen.dir/rule
 
 # Convenience name for target.
@@ -151,14 +151,14 @@ CMakeFiles/omp_gen.dir/clean:
 CMakeFiles/intrinsics_gen.dir/all:
 	$(MAKE) -f CMakeFiles/intrinsics_gen.dir/build.make CMakeFiles/intrinsics_gen.dir/depend
 	$(MAKE) -f CMakeFiles/intrinsics_gen.dir/build.make CMakeFiles/intrinsics_gen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target intrinsics_gen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target intrinsics_gen"
 .PHONY : CMakeFiles/intrinsics_gen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/intrinsics_gen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/intrinsics_gen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
 .PHONY : CMakeFiles/intrinsics_gen.dir/rule
 
 # Convenience name for target.
@@ -172,85 +172,85 @@ CMakeFiles/intrinsics_gen.dir/clean:
 .PHONY : CMakeFiles/intrinsics_gen.dir/clean
 
 #=============================================================================
-# Target rules for target SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir
+# Target rules for target SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir
 
 # All Build rule for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/all: SplitBasicBlock/CMakeFiles/LLVMPassname.dir/all
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/depend
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target install-LLVMPassname-stripped"
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/all
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/all: SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/all
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/depend
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target install-SplitBasicBlock-stripped"
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/all
 
 # Build rule for subdir invocation for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname-stripped: SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/rule
+install-SplitBasicBlock-stripped: SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/rule
 
-.PHONY : install-LLVMPassname-stripped
+.PHONY : install-SplitBasicBlock-stripped
 
 # clean rule for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/clean:
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/clean
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname-stripped.dir/clean
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/clean:
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/clean
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock-stripped.dir/clean
 
 #=============================================================================
-# Target rules for target SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir
+# Target rules for target SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir
 
 # All Build rule for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/all: SplitBasicBlock/CMakeFiles/LLVMPassname.dir/all
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/depend
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target install-LLVMPassname"
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/all
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/all: SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/all
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/depend
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num= "Built target install-SplitBasicBlock"
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/all
 
 # Build rule for subdir invocation for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/rule
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/rule
 
 # Convenience name for target.
-install-LLVMPassname: SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/rule
+install-SplitBasicBlock: SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/rule
 
-.PHONY : install-LLVMPassname
+.PHONY : install-SplitBasicBlock
 
 # clean rule for target.
-SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/clean:
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/clean
-.PHONY : SplitBasicBlock/CMakeFiles/install-LLVMPassname.dir/clean
+SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/clean:
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/clean
+.PHONY : SplitBasicBlock/CMakeFiles/install-SplitBasicBlock.dir/clean
 
 #=============================================================================
-# Target rules for target SplitBasicBlock/CMakeFiles/LLVMPassname.dir
+# Target rules for target SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir
 
 # All Build rule for target.
-SplitBasicBlock/CMakeFiles/LLVMPassname.dir/all:
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/depend
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num=1,2 "Built target LLVMPassname"
-.PHONY : SplitBasicBlock/CMakeFiles/LLVMPassname.dir/all
+SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/all:
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/depend
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles --progress-num=1,2 "Built target SplitBasicBlock"
+.PHONY : SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/all
 
 # Build rule for subdir invocation for target.
-SplitBasicBlock/CMakeFiles/LLVMPassname.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/LLVMPassname.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ping/桌面/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
-.PHONY : SplitBasicBlock/CMakeFiles/LLVMPassname.dir/rule
+SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/github-project/llvm-pass/SplitBasicBlock/build/CMakeFiles 0
+.PHONY : SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/rule
 
 # Convenience name for target.
-LLVMPassname: SplitBasicBlock/CMakeFiles/LLVMPassname.dir/rule
+SplitBasicBlock: SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/rule
 
-.PHONY : LLVMPassname
+.PHONY : SplitBasicBlock
 
 # clean rule for target.
-SplitBasicBlock/CMakeFiles/LLVMPassname.dir/clean:
-	$(MAKE) -f SplitBasicBlock/CMakeFiles/LLVMPassname.dir/build.make SplitBasicBlock/CMakeFiles/LLVMPassname.dir/clean
-.PHONY : SplitBasicBlock/CMakeFiles/LLVMPassname.dir/clean
+SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/clean:
+	$(MAKE) -f SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/build.make SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/clean
+.PHONY : SplitBasicBlock/CMakeFiles/SplitBasicBlock.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

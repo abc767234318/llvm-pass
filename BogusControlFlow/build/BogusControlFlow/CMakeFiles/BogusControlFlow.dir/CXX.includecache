@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/BogusControlFlow.cpp
+llvm/Pass.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/Pass.h
+llvm/IR/Function.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/IR/Function.h
+llvm/Support/raw_ostream.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/Support/raw_ostream.h
+llvm/Support/CommandLine.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/Support/CommandLine.h
+llvm/Transforms/Utils/Local.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/Transforms/Utils/Local.h
+llvm/Transforms/Utils/ValueMapper.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/Transforms/Utils/ValueMapper.h
+llvm/Transforms/Utils/Cloning.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/Transforms/Utils/Cloning.h
+llvm/IR/Module.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/IR/Module.h
+llvm/IR/Instructions.h
+/home/ubuntu/github-project/llvm-pass/BogusControlFlow/BogusControlFlow/llvm/IR/Instructions.h
+vector
+-
+
